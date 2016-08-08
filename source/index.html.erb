@@ -46,54 +46,23 @@
 <!-- Your cards code -->
 <div class="card-wrapper">
   <div class="container center-items">
-    <div class="row inner-class">
-      <div class="col-xs-12 col-md-4">
-        <div class="inner-class">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-            <%= image_tag "seb.jpg" , alt: "", class: "card-user avatar" %>
-            <div class="card-category">
-              <h2>Paris</h2>
-            </div>
-            <div class="card-description">
-              <h2>Seb's home</h2>
-              <p>Charming room with...</p>
-            </div>
+    <div class="row">
+      <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-4 card-page">
+        <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+          <div class="card-category"><%= flat.city %></div>
+          <div class="card-description">
+            <h2><%= flat.name %></h2>
+            <p><%= flat.summary %></p>
           </div>
+          <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
+          <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="inner-class">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-            <%= image_tag "romain.jpeg" , alt: "", class: "card-user avatar" %>
-            <div class="card-category">
-              <h2>Paris</h2>
-            </div>
-            <div class="card-description">
-              <h2>Seb's home</h2>
-              <p>Charming room with...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="inner-class">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-            <%= image_tag "anne.jpg" , alt: "", class: "card-user avatar" %>
-            <div class="card-category">
-              <h2>Paris</h2>
-            </div>
-            <div class="card-description">
-              <h2>Seb's home</h2>
-              <p>Charming room with...</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
-
-
 <!-- Your newsletter code -->
 
 <div class="wrapper-form">

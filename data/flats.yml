@@ -1,0 +1,49 @@
+# data/flats.yml
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-brussels.jpeg
+  owner_picture: anne.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+romain:
+  owner_name: Romain Paillard
+  picture: card-london.jpeg
+  owner_picture: romain.jpeg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+nicolas:
+  owner_name: Nicolas Saunier
+  picture: card-paris.jpg
+  owner_picture: anne.jpg
+  name: Nico's home
+  summary: Charming room in St-Raphaël
+  city: St-Raphaël, France
+  wifi: true
+bernard:
+  owner_name: Bernard Paillard
+  picture: card-paris.jpg
+  owner_picture: romain.jpeg
+  name: Bernard's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+joel:
+  owner_name: Joel Saunier
+  picture: card-brussels.jpeg
+  owner_picture: seb.jpg
+  name: Joel's home
+  summary: Charming room in ...
+  city: Paris, France
+  wifi: true
+anne:
+  owner_name: Anne Paillard
+  picture: card-london.jpeg
+  owner_picture: seb.jpg
+  name: Anne's home
+  summary: Nice flat in Anne's street
+  city: London, UK
+  wifi: false
