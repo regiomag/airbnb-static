@@ -6,12 +6,12 @@
 
 .wrapper-form{
   padding: 40px 100px;
-  background-color: grey;
+  background-color: $grey-light;
 }
 
 .inside-form {
-  background-color: #C0C0C0;
+  background-color: $grey-lighter;
   padding: 20px 50px;
   border-radius: 5px;
-  box-shadow: 2px 2px 3px #DCDCDC;
+  box-shadow: 2px 2px 3px $grey-light;
 }
