@@ -92,16 +92,13 @@ end
 
 # Getting data for flats pages
 #
-# members = []
-# data.flats[owner].each do |member|
-#   members << member
-# end
 
-# members.each do |member|
+
+# data.flats.keys do |member|
 #   proxy "/flat/#{member}.html", "/flat/show.html", :locals => { :owner => member }
 # end
 
 
-["anne", "seb", "romain"].each do |name|
+["anne", "seb", "romain", "joel"].each do |name|
   proxy "/flat/#{name}.html", "/flat/show.html", :locals => { :owner => name }, :ignore => true
 end
