@@ -1,8 +1,9 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <a href="/" class="navbar-wagon-brand">
-    <img src="images/lewagon.png" />
-  </a>
+
+  <% link_to "/" do %>
+    <%= image_tag "images/lewagon.png", alt: "", class: "navbar-wagon-brand" %>
+    <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -16,10 +17,10 @@
     </form>
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <%= link_to "Contact", "", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+    <%= link_to "Team", "team.html", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Notification link-->
     <a href="" class="navbar-wagon-item navbar-wagon-link">
