@@ -1,0 +1,17 @@
+.form-displ {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.wrapper-form{
+  padding: 40px 100px;
+  background-color: grey;
+}
+
+.inside-form {
+  background-color: #C0C0C0;
+  padding: 20px 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #DCDCDC;
+}
